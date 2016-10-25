@@ -1,0 +1,31 @@
+@mobile: ~"(max-width: 767px)";
+@tablet:     ~"(max-width: 768px)";
+@desktop:     ~"(max-width: 992px)";
+@desktop-xl:  ~"(max-width: 1200px)"; 
+
+.centered {
+    float: none !important;
+    margin: 0 auto;
+}
+
+
+@xs-min: 480px;
+@sm-min: 768px;
+@md-min: 992px;
+@lg-min: 1200px;
+
+@xs-max: (@sm-min - 1);
+@sm-max: (@md-min - 1);
+@md-max: (@lg-min - 1);
+
+@xs-up: ~"only screen and (min-width: @{xs-min})";
+@xs-down: ~"only screen and (max-width: @{xs-min})";
+@xs-mid: ~"only screen and (min-width: @{xs-min}) and (max-width: @{xs-max})";
+@sm-up: ~"only screen and (min-width: @{sm-min})";
+@sm-down: ~"only screen and (max-width: @{sm-min})";
+@sm-mid: ~"only screen and (min-width: @{sm-min}) and (max-width: @{sm-max})";
+@md-up: ~"only screen and (min-width: @{md-min})";
+@md-down: ~"only screen and (max-width: @{sm-max})";
+@md-mid: ~"only screen and (min-width: @{md-min}) and (max-width: @{md-max})";
+@lg-up: ~"only screen and (min-width: @{lg-min})";
+@lg-down: ~"only screen and (max-width: @{lg-min})";
